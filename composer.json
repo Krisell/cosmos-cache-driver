@@ -1,0 +1,34 @@
+{
+    "name": "krisell/cosmos-cache-driver",
+    "description": "CosmosDB cache driver for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Krisell",
+            "email": "martin.krisell@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Krisell\\CosmosCacheDriver\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Krisell\\CosmosCacheDriver\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "orchestra/testbench": "^3.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Krisell\\CosmosCacheDriver\\CosmosCacheDriverServiceProvider"
+            ]
+        }
+    }
+}
