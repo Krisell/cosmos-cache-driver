@@ -30,3 +30,5 @@ COSMOS_DATABASE=database_name
 COSMOS_CONNECTION=database_connection_string (something like mongodb://)
 COSMOS_TABLE=table_name (optional, defaults to cache_{{env}})
 ```
+
+The database and table are created automatically by CosmosDB.
