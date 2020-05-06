@@ -11,14 +11,15 @@ class CosmosCacheDriverServiceProvider extends ServiceProvider
     {
         Cache::extend('cosmos', function ($app) {
             return Cache::repository(
-                new CosmosStore(app('db')->connection('cosmos'),
-                config('cache.stores.cosmos.table'),
-            ));
+                new CosmosStore(
+                    app('db')->connection('cosmos'),
+                    config('cache.stores.cosmos.table')
+                )
+            );
         });
     }
 
     public function register()
     {
-
     }
 }
